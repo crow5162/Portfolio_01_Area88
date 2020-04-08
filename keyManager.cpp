@@ -27,13 +27,10 @@ void keyManager::release()
 
 bool keyManager::isOnceKeyDown(int key)
 {
-	//어떠한 키를 눌렀을때
 	if (GetAsyncKeyState(key) & 0x8000)
 	{
-		//만약에 그 키가 눌려져있지 않다면
 		if (!this->getKeyDown()[key])
 		{
-			//눌러졌다고 신호를 보내라
 			this->setKeyDown(key, true);
 
 			return true;

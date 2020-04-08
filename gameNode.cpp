@@ -86,7 +86,7 @@ LRESULT gameNode::MainProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 			EndPaint(hWnd, &ps);
 		}
 		break;
-		//왼쪽클릭하고있으면
+
 
 		case WM_MOUSEMOVE:
 			_ptMouse.x = static_cast<float>(LOWORD(lParam));

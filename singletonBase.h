@@ -15,7 +15,6 @@ public:
 
 };
 
-//ΩÃ±€≈Ê √ ±‚»≠
 template<typename T>
 T* singletonBase<T>::singleton = 0;
 

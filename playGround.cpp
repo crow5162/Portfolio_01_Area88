@@ -17,7 +17,6 @@ HRESULT playGround::init()
 
 	_gameState = GAME_INTRO;
 
-	//에너미 프레임이미지 일단 여기서 초기화 시켜둠, 나중에 변경할것
 	IMAGEMANAGER->addFrameImage("적헬기1", "Enemy_01_Final.bmp", 0, 0, 250, 95, 2, 2, true, RGB(255, 0, 255)); 
 	IMAGEMANAGER->addFrameImage("적헬기2", "Enemy_02_Final.bmp", 0, 0, 250, 95, 2, 2, true, RGB(255, 0, 255));
 	IMAGEMANAGER->addFrameImage("전투기", "Enemy_03_New.bmp", 0, 0, 3979, 85, 23, 1, true, RGB(255, 0, 255));

@@ -17,7 +17,6 @@ void PlayerBullet::release()
 
 void PlayerBullet::update()
 {
-	//플레이어 매니저에서 bCount 받아와서 그거에따라 btype 바꿔주면 아이템과 충돌할때마다 BulletImage 바꿔줌.
 	if (_kajama->getBulletTypecount() == 0)
 	{
 		_btype = BULLET_SMALL;

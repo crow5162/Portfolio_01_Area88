@@ -38,7 +38,7 @@ void txtData::txtSave(const char * saveFileName, vector<string> vStr)
 	CloseHandle(file);
 }
 
-//문자열을 조합하기 위한 함수
+
 char* txtData::vectorArrayCombine(vector<string> vArray)
 {
 	char str[128];
@@ -47,7 +47,7 @@ char* txtData::vectorArrayCombine(vector<string> vArray)
 	for (int i = 0; i < vArray.size(); ++i)
 	{
 		strncat_s(str, 128, vArray[i].c_str(), 126);
-		//만약에 배열사이즈보다 작을때까지 문자를 더해라(?)
+
 		if (i + 1 < vArray.size()) strcat_s(str, ",");
 	}
 
@@ -76,7 +76,7 @@ vector<string> txtData::charArraySeparation(char charArray[])
 	vector<string> vArray;
 
 	char* temp;
-	const char* separator = ",";	//구분자
+	const char* separator = ",";	
 	char* token;
 
 	token = strtok_s(charArray, separator, &temp);

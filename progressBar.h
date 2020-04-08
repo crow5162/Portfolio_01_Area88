@@ -8,8 +8,8 @@ private:
 	float _x, _y;
 	float _width;
 
-	image* _progressBarTop;			//게이지 앞에 이미지
-	image* _progressBarBottom;		//게이지 뒤에 이미지
+	image* _progressBarTop;			
+	image* _progressBarBottom;		
 
 	int currentGaugeX, maxGaugeX;
 
